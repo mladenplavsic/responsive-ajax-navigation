@@ -1,0 +1,140 @@
+#viewport {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#page {
+  position: relative;
+  padding: 120px 0;
+}
+
+#header {
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  z-index: 1;
+}
+
+#header a {
+  color: #fff;
+}
+
+#header .logo {
+  display: block;
+  float: left;
+}
+
+#main {
+  width: 1024px;
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+aside nav ul {
+  list-style: none;
+  z-index: 2;
+  position: fixed;
+  font-size: 1.125em;
+  margin: 0;
+}
+
+aside nav ul li {
+  float: left;
+}
+
+aside nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 5px;
+  margin-right: 6px;
+}
+
+aside nav ul li a.active {
+  background: #000;
+  color: #fff;
+}
+
+aside nav ul.primary {
+  top: 0;
+  right: 0;
+}
+
+aside nav ul.secondary {
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+aside nav ul.secondary a {
+  color: inherit;
+}
+
+#header a.nav {
+  display: none;
+}
+
+/* MOBILE */
+
+@media ( max-width : 768px) {
+  #header a.nav {
+    display: block;
+    float: left;
+    padding: 4%;
+    position: relative;
+    z-index: 9;
+  }
+  #header a.logo {
+    position: absolute;
+    left: 16%;
+    padding-top: 4%;
+  }
+  #page {
+    margin-top: 8%;
+    padding: 60px 0;
+  }
+  aside nav {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #ccc;
+    z-index: 1000;
+  }
+  aside nav ul {
+    background: none !important;
+    position: relative;
+    width: 200px;
+    padding: 0 !important;
+    bottom: auto !important;
+  }
+  aside nav ul li {
+    float: none;
+  }
+  aside nav ul li a,aside nav ul li a:link,aside nav ul li a:visited {
+    padding: 7px 5px;
+    color: black !important;
+    border-bottom: 1px solid #bbbbbb;
+    margin: 0;
+  }
+  aside nav ul li a.active,aside nav ul li a:active,aside nav ul li a:focus,aside nav ul li a:hover {
+    background: #000;
+    color: #fff !important;
+  }
+  #blocker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+}
