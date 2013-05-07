@@ -2,11 +2,11 @@ Responsive Ajax Navigation
 ==========================
 
 Simple HTML+CSS+JS navigation, flexible and customizable. Main and only features are 
-* Slide-in navigation
+* Slide-in vertical navigation (on mobile devices)
 * AJAX page loading
 
 
-## Slide-in navigation
+## Slide-in vertical navigation
 
 Classic navigation which turns into a slide-in left hand side navigation bar on mobile devices.
 
