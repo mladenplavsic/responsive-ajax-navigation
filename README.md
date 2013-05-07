@@ -1,4 +1,4 @@
-responsive-ajax-navigation
+Responsive Ajax Navigation
 ==========================
 
 
