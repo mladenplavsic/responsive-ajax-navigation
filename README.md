@@ -5,7 +5,8 @@ Simple HTML+CSS+JS navigation, flexible and customizable. Main and only features
 * Slide-in navigation
 * AJAX page loading
 
-## Navigation layout
+
+## Slide-in navigation
 
 Classic navigation which turns into a slide-in left hand side navigation bar on mobile devices.
 
